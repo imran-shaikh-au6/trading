@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Practice.css";
+import "./Home.css";
 import img from "./logo.svg";
 import Security from "./Security";
 class Practice extends Component {
