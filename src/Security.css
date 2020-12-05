@@ -1,0 +1,290 @@
+/* right side content */
+.content2 {
+    background: rgb(33, 41, 52);
+    width: 100%;
+    padding: 3%;
+    margin-left: 0.4em;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* cards */
+.card {
+    display: flex;
+
+    background: rgb(41, 53, 68);
+
+    padding-bottom: 0;
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0, 0.1);
+
+    width: 30em;
+}
+/* costume button */
+.btn {
+    background: rgb(41, 53, 68);
+    outline: none;
+    border: 1px solid rgb(41, 53, 68);
+    font-size: 0.7em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border: 0.5px solid rgb(1, 141, 184);
+    border-radius: 0.2em;
+    color: rgb(1, 141, 184);
+}
+.btn:hover {
+    background: rgb(1, 141, 184, 0.2);
+    color: rgb(1, 141, 184);
+    cursor: pointer;
+}
+/* child classes of content */
+.first {
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+.first i {
+    color: rgb(1, 141, 184);
+}
+.sec {
+    margin-left: 1em;
+    color: rgb(155, 163, 173);
+    line-height: 1.5em;
+    font-size: 0.8em;
+    padding: 0.7em 0;
+}
+.innerSec {
+    padding-top: 0.5em;
+}
+
+.innerSec ul {
+    padding-left: 1.5em;
+}
+.logout {
+    padding-right: 0.5em;
+}
+.pass {
+    padding-top: 0.8em;
+}
+.title {
+    color: white;
+}
+.sec a i {
+    color: rgb(1, 141, 184);
+}
+.third {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1em;
+}
+/* costume togller */
+.Switch.On .Toggle {
+    left: 2%;
+}
+.Switch.Off .Toggle {
+    left: 54%;
+}
+.tog {
+    display: flex;
+    margin-left: 2em;
+}
+.btns {
+    background: rgb(41, 53, 68);
+    outline: none;
+    border: 2px solid rgb(41, 63, 73);
+    font-size: 0.7em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    /* border: 0.5px solid rgb(1, 141, 184); */
+    border-radius: 0.2em;
+    color: rgb(115, 119, 139);
+    cursor: pointer;
+    height: 2.5em;
+    margin-top: 2em;
+}
+.btns-active {
+    background: rgb(1, 141, 184, 0.2);
+    outline: none;
+    border: 1px solid rgb(41, 53, 68);
+    font-size: 0.7em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border: 0.5px solid rgb(1, 141, 184);
+    border-radius: 0.2em;
+    color: rgb(1, 141, 184);
+    cursor: pointer;
+    height: 2.5em;
+    margin-top: 2em;
+}
+
+p {
+    font-size: 0.9em;
+}
+.one {
+    height: 6em;
+}
+.two {
+    height: 6em;
+}
+.three {
+    height: 8em;
+    margin-top: -8em;
+}
+.four {
+    height: 6em;
+    margin-top: -8em;
+}
+.five {
+    height: 4em;
+    margin-top: -6em;
+}
+.six {
+    height: 8em;
+    margin-top: -10em;
+}
+/* Media Responsive section */
+@media (max-width: 575.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .card {
+        height: 100%;
+        margin: auto;
+    }
+    .one {
+        height: 8em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}
+@media (min-width: 579px) and (max-width: 767.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .card {
+        height: 100%;
+        margin: auto;
+    }
+    .one {
+        height: 8em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .card {
+        height: 100%;
+        margin: auto;
+    }
+    .one {
+        height: 8em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .card {
+        height: 100%;
+        margin: auto;
+    }
+    .one {
+        height: 8em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}

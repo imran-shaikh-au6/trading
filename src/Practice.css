@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    background: rgb(20, 28, 40);
+}
+p {
+    font-size: 0.9em;
+}
+/* navbar */
+.nav {
+    display: flex;
+    background: rgb(33, 41, 52);
+    color: rgb(1, 141, 184);
+    height: 4em;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+.nav img {
+    height: 2.5em;
+    margin-left: 2em;
+}
+.nav p {
+    margin-left: 9em;
+    font-weight: bold;
+}
+
+/* body section */
+
+.contents {
+    display: flex;
+    width: 100%;
+}
+.costum{
+    padding-right: 2em;
+}
+.leftDrawer {
+    background: rgb(33, 41, 52);
+    height: 100vh;
+    color: rgb(115, 119, 139);
+    width: 12em;
+}
+
+.leftDrawer ul li {
+    list-style-type: none;
+}
+.leftDrawer ul li a {
+    text-decoration: none;
+    color: rgb(115, 119, 139);
+    height: 3em;
+    width: 12em;
+    padding-left: 2em;
+    padding-top: 0.6em;
+    display: inline-block;
+}
+.leftDrawer ul li a:hover {
+    background: rgb(20, 28, 40);
+
+    color: rgb(1, 141, 184);
+}
+.active {
+    background: rgb(20, 28, 40);
+
+    color: rgb(1, 141, 184);
+}
+
+.card {
+    display: flex;
+    background: rgb(41, 53, 68);
+    margin-left: 3em;
+    box-shadow: 0px 0px 4px 4px rgb(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    width: em;
+}
+/* costum buttons */
+.btn {
+    background: rgb(41, 53, 68);
+    outline: none;
+    border: 1px solid rgb(41, 53, 68);
+    font-size: 0.7em;
+    padding: 0.8em 2.3em 0.8em 2.3em;
+    border: 0.5px solid rgb(1, 141, 184);
+    border-radius: 0.2em;
+    color: rgb(1, 141, 184);
+}
+/* button hover effect */
+.btn:hover {
+    background: rgb(1, 141, 184, 0.2);
+    color: rgb(1, 141, 184);
+    cursor: pointer;
+}
+/* child classes of body content */
+.first {
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+.first i {
+    color: rgb(1, 141, 184);
+}
+.sec {
+    margin-left: 1em;
+    color: #f0f0c0;
+    line-height: 1.5em;
+    font-size: 0.8em;
+    padding: 0.7em 0;
+}
+.sec a {
+    color: rgb(1, 141, 184);
+}
+.third {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1em;
+}
+/* toggle button  */
+.Switch.On .Toggle {
+    left: 2%;
+}
+.Switch.Off .Toggle {
+    left: 54%;
+}
+.tog {
+    display: flex;
+    margin-right: 0.5em;
+}
+/* toggle button costom */
+.btns {
+    background: rgb(41, 53, 68);
+    outline: none;
+    border: 2px solid rgb(41, 63, 73);
+    font-size: 0.7em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    /* border: 0.5px solid rgb(1, 141, 184); */
+    border-radius: 0.2em;
+    color: rgb(115, 119, 139);
+    cursor: pointer;
+    height: 2.5em;
+    margin-top: 2em;
+}
+.btns-active {
+    background: rgb(1, 141, 184, 0.2);
+    outline: none;
+    border: 1px solid rgb(41, 53, 68);
+    font-size: 0.7em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border: 0.5px solid rgb(1, 141, 184);
+    border-radius: 0.2em;
+    color: rgb(1, 141, 184);
+    cursor: pointer;
+    height: 2.5em;
+    margin-top: 2em;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 575.98px) {
+    .leftDrawer {
+        display: none;
+    }
+    .contents {
+        height: auto;
+    }
+    .mob {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .hams {
+        height: 2em;
+        margin: 1em;
+        color: rgb(1, 141, 184);
+        cursor: pointer;
+    }
+    .logo {
+        margin: 1em;
+    }
+    .nav {
+        display: none;
+    }
+}
+.mob {
+    display: none;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .leftDrawer {
+        display: none;
+    }
+    .contents {
+        height: auto;
+    }
+    .mob {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .hams {
+        height: 2em;
+        margin: 1em;
+        color: rgb(1, 141, 184);
+    }
+    .logo {
+        margin: 1em;
+    }
+    .nav {
+        display: none;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .leftDrawer {
+        height: 100%;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .leftDrawer {
+        height: 100%;
+    }
+}
