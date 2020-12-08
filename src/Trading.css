@@ -1,0 +1,181 @@
+/* right side content */
+.content2 {
+    background: rgb(33, 41, 52);
+    width: 100%;
+    padding: 3%;
+    margin-left: 0.4em;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Balance script */
+.sampleData {
+    width: 100%;
+    height: 20em;
+    background: rgb(41, 53, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50, -50);
+}
+.sampleData h1 {
+    color: rgb(155, 163, 173);
+}
+.sampleData h2 {
+    color: rgb(1, 141, 184);
+}
+/* back button only for mobile view */
+.backMenu {
+    display: none;
+}
+/* Media Responsive section */
+@media (max-width: 575.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .sampleData {
+        width: 100%;
+        height: 20em;
+        color: rgb(155, 163, 173);
+        background: rgb(41, 53, 68);
+        padding: 4em;
+        margin-right: 2em;
+        padding-right: 0.5em;
+    }
+    .sampleData h1,
+    h2 {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    .backMenu {
+        color: white;
+        display: flex;
+        text-align: center;
+        padding: 0.5em;
+        width: 100%;
+        height: 3em;
+        background: rgb(33, 41, 52);
+    }
+
+    .backTag {
+        padding-left: 2em;
+        margin-top: -0.4em;
+        font-weight: bold;
+    }
+}
+@media (min-width: 579px) and (max-width: 767.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .sampleData {
+        width: 100%;
+        height: 20em;
+        color: rgb(155, 163, 173);
+        background: rgb(41, 53, 68);
+        padding: 4em;
+
+        transform: translate(-50, -50);
+    }
+    .sampleData h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .backMenu {
+        color: white;
+        display: flex;
+        text-align: center;
+        padding: 0.5em;
+        width: 100%;
+        height: 3em;
+        background: rgb(33, 41, 52);
+    }
+
+    .backTag {
+        padding-left: 2em;
+        margin-top: -0.4em;
+        font-weight: bold;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .sampleData {
+        width: 100%;
+        height: 20em;
+        color: rgb(155, 163, 173);
+        background: rgb(41, 53, 68);
+        padding: 4em;
+
+        transform: translate(-50, -50);
+    }
+    .sampleData h1,
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .backMenu {
+        color: white;
+        display: flex;
+        text-align: center;
+        padding: 0.5em;
+        width: 100%;
+        height: 3em;
+        background: rgb(33, 41, 52);
+    }
+
+    .backTag {
+        padding-left: 2em;
+        margin-top: -0.4em;
+        font-weight: bold;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .cardd {
+        height: 100%;
+        margin: auto;
+    }
+    .one {
+        height: 8em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}

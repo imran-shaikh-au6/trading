@@ -8,18 +8,15 @@
     flex-wrap: wrap;
 }
 /* cards */
-.card {
+.cardd {
     display: flex;
-
     background: rgb(41, 53, 68);
-
     padding-bottom: 0;
     box-shadow: 0px 0px 4px 4px rgb(0, 0, 0, 0.1);
-
     width: 30em;
 }
 /* costume button */
-.btn {
+.btnn {
     background: rgb(41, 53, 68);
     outline: none;
     border: 1px solid rgb(41, 53, 68);
@@ -29,7 +26,7 @@
     border-radius: 0.2em;
     color: rgb(1, 141, 184);
 }
-.btn:hover {
+.btnn:hover {
     background: rgb(1, 141, 184, 0.2);
     color: rgb(1, 141, 184);
     cursor: pointer;
@@ -45,14 +42,14 @@
 .sec {
     margin-left: 1em;
     color: rgb(155, 163, 173);
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-size: 0.8em;
     padding: 0.7em 0;
 }
-.innerSec {
-    padding-top: 0.5em;
-}
 
+.secLarge {
+    padding: 0.2em;
+}
 .innerSec ul {
     padding-left: 1.5em;
 }
@@ -62,7 +59,7 @@
 .pass {
     padding-top: 0.8em;
 }
-.title {
+.titles {
     color: white;
 }
 .sec a i {
@@ -71,10 +68,10 @@
 .third {
     margin-left: auto;
     margin-top: auto;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
     margin-right: 1em;
 }
-/* costume togller */
+/* costum togller */
 .Switch.On .Toggle {
     left: 2%;
 }
@@ -85,6 +82,7 @@
     display: flex;
     margin-left: 2em;
 }
+/* hovering effect btns */
 .btns {
     background: rgb(41, 53, 68);
     outline: none;
@@ -111,10 +109,7 @@
     height: 2.5em;
     margin-top: 2em;
 }
-
-p {
-    font-size: 0.9em;
-}
+/* main field data security cards */
 .one {
     height: 6em;
 }
@@ -137,6 +132,10 @@ p {
     height: 8em;
     margin-top: -10em;
 }
+/* Back button only for mob */
+.backMenu {
+    display: none;
+}
 /* Media Responsive section */
 @media (max-width: 575.98px) {
     .content2 {
@@ -145,9 +144,26 @@ p {
         height: auto;
         background: rgb(33, 41, 52);
     }
-    .card {
+    .cardd {
         height: 100%;
         margin: auto;
+    }
+    .backMenu {
+        color: white;
+        display: flex;
+        text-align: center;
+        padding: 0.5em;
+        width: 100%;
+        height: 3em;
+        background: rgb(33, 41, 52);
+    }
+    .leftIcon {
+        cursor: pointer;
+    }
+    .backTag {
+        padding-left: 2em;
+        margin-top: -0.4em;
+        font-weight: bold;
     }
     .one {
         height: 8em;
@@ -182,7 +198,7 @@ p {
         height: auto;
         background: rgb(33, 41, 52);
     }
-    .card {
+    .cardd {
         height: 100%;
         margin: auto;
     }
@@ -220,7 +236,7 @@ p {
         height: auto;
         background: rgb(33, 41, 52);
     }
-    .card {
+    .cardd {
         height: 100%;
         margin: auto;
     }
@@ -258,12 +274,90 @@ p {
         height: auto;
         background: rgb(33, 41, 52);
     }
-    .card {
+    .cardd {
         height: 100%;
         margin: auto;
     }
     .one {
         height: 8em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .cardd {
+        height: 100%;
+        margin: auto;
+    }
+    .one {
+        height: 7em;
+        margin-bottom: 0.5em;
+        padding: auto;
+    }
+    .two {
+        height: 7em;
+        margin-bottom: 0.5em;
+    }
+    .three {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .four {
+        height: 9em;
+        margin-bottom: 0.5em;
+    }
+    .five {
+        height: 4em;
+        margin-bottom: 0.5em;
+    }
+    .six {
+        height: 12em;
+        margin-bottom: 0.5em;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .content2 {
+        display: flex;
+        flex: wrap;
+        height: auto;
+        background: rgb(33, 41, 52);
+    }
+    .cardd {
+        height: 100%;
+
+        margin: 2.5em;
+    }
+    .one {
+        height: 7em;
         margin-bottom: 0.5em;
         padding: auto;
     }
